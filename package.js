@@ -1,6 +1,6 @@
 Package.describe({
   name: 'ndxbxrme:modified',
-  version: '0.2.0',
+  version: '0.2.1',
   summary: 'Simply adds updatedBy/At and createdBy/At to a collection',
   git: 'https://github.com/ndxbxrme/meteor-modified',
   documentation: 'README.md'

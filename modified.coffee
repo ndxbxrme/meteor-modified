@@ -11,6 +11,8 @@ Mongo.Collection.prototype.ndxModified = (options = {}) ->
     return
     
   collection.before.update (userId, doc, fieldNames, modifier, options) ->
+    if not modifier.$set
+      modifier.$set = {}
     modifier.$set.updatedAt = new Date()
     modifier.$set.updatedBy = userId
     return
